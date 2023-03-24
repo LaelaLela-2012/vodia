@@ -1,0 +1,103 @@
+.ModalStyles {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 50%;
+    width: 50%;
+    /* background: rgba(0,0,0,0.966); */
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    padding: 0;
+}
+
+.VideoDetailSection {
+    height: 100%;
+}
+.VideoDetailSection video {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.shadowedSection video {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.shadowedSection > * {
+    margin-bottom: 1rem;
+}
+
+.shadowedSection {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.966) 55%, transparent);
+    color: white;
+    padding: 18px 0 12px 4%;
+}
+
+.shadowedSection div {
+    color: #999;
+} 
+
+
+.horizontalStyles {
+    display: flex;
+}
+
+.horizontalStyles button {
+    height: 38px;
+    width: 138px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(24, 24, 24);
+    padding: 0 !important;
+}
+
+.Overview {
+    overflow: scroll;
+    width: 60%;
+}
+
+button {
+    margin-right: 10px !important;
+}
+@media(min-width: 600px) {
+    .ModalStyles {
+        height: 60%;
+        font-size: 1rem;
+    }
+
+    .shadowedSection {
+        background: linear-gradient(90deg, rgba(0,0,0,0.966) 35%, transparent);
+    }
+
+    .shadowedSection div {
+        width: 60%;
+    } 
+
+    .shadowedSection > * {
+        margin-bottom: 2rem;
+    }
+    
+}
+
+@media(min-width: 1650px) {
+    .ModalStyles {
+        font-size: 1.6rem;
+    }
+}

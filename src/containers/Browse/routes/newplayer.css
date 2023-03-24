@@ -1,0 +1,51 @@
+.plyr__progress input[type=range], .plyr__progress__buffer {
+    margin-left: -6.5px;
+    margin-left: calc(var(--plyr-range-thumb-height, 13px)*-.5);
+    margin-right: -6.5px;
+    margin-right: calc(var(--plyr-range-thumb-height, 13px)*-.5);
+    width: calc(100% + 13px);
+    width: calc(100% + var(--plyr-range-thumb-height, 13px));
+    position: absolute;
+    position: relative;
+    bottom: 2rem;
+    width: 75rem;
+    margin-left: -2rem;
+  }
+  .plyr--video .plyr__progress__buffer {
+    color: hsla(0,0%,100%,.25);
+    color: var(--plyr-video-progress-buffered-background,hsla(0,0%,100%,.25));
+    display: none;
+}
+.plyr__video-wrapper {
+  height: 100vh;
+}
+.bottomContent {
+  background: #fff;
+  height: 73vh;
+  padding: 20px 30px;
+}
+.headline {
+  font-size: 16px;
+  color: #111;
+  margin-bottom: 5px;
+}
+.upNext h3 {
+  padding: 10px 0;
+  font-size: 14px;
+  color: #111;
+}
+@media only screen and (max-width: 467px) {
+  .plyr__video-wrapper {
+    height: 100vh;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) { 
+  video { 
+    transform: rotate(0deg) !important;
+    transform-origin: left top;
+    overflow-x: initial;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

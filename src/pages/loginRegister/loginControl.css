@@ -1,0 +1,11 @@
+.hide {
+    display: none;
+}
+
+.loginout {
+    font-size: 14px;
+    color: #e50914;
+    background: transparent;
+    padding: 0;
+    margin: 0 auto;
+}

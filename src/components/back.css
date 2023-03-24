@@ -1,0 +1,26 @@
+.backShare {
+    display: flex;
+}
+.back {
+	color: #fff;
+    display: flex;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 3;
+    padding: 20px;
+}
+.share{
+	color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 3;
+    padding: 20px;
+    right: 0;
+}
+.share:hover{
+    transform: scale(1.2);
+  }

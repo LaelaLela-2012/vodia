@@ -1,0 +1,87 @@
+.Register {
+  width: 100%;
+}
+
+.RegisterCard {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 75px);
+  color: #fff;
+  padding: 40px 38px 40px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.RegisterCard img {
+  height: auto;
+  cursor: pointer;
+  margin: 0 auto 30px;
+  width: 100%;
+}
+
+.RegisterCard h1, .RegisterCard h4 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.RegisterCard form > * {
+  margin-top: 25px;
+}
+
+.RegisterCard form {
+  padding: 25px 0;
+}
+
+.RegisterCard form span {
+    color: red;
+    font-size: 13px;
+}
+
+.RegisterCard button {
+  margin-top: 25px;
+}
+
+.textField {
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.textField input {
+  color: white;
+}
+
+.HorizontalDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recaptcha{
+  margin: 0 auto 12px;
+}
+
+@media (min-width: 600px) {
+    .RegisterCard {
+      width: 450px;
+      padding: 60px 68px 40px;
+      margin: auto;
+    }
+}
+
+@media(min-width: 1650px) {
+    .RegisterCard {
+        width: 550px;
+        height: 880px;
+        padding: 60px 68px 40px;
+        margin: auto;
+    }
+
+    .RegisterCard form span {
+        font-size: 20px;
+    }
+}

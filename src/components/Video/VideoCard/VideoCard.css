@@ -1,0 +1,104 @@
+.VideoCard {
+    /* display: flex; */
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+}
+.VideoCard img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    margin-right: 5px;
+    overflow: hidden;
+}
+.VideoCard video {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.videoCard:hover {
+    height:100px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.VideoCard:hover .VideoInfo {
+    display: block;
+    background: #000;
+    opacity: 0.9;
+    color: #fff;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    /* padding: 10px 20px 30px; */
+    height: 50px;
+}
+
+.NetflixOriginalCard:hover .VideoInfo {
+    display: block;
+}
+
+.VideoInfo {
+    display: none;
+    padding: 0 10px 10px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.VideoInfo h6 {
+    margin: 3px 0;
+}
+
+.VideoInfo span {
+font-size: 8px;
+}
+.horizontalStyle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.horizontalStyle span {
+    font-size: 0.5em;
+    text-shadow: 2px 2px 4px rgb(20 20 20 / 45%)
+}
+
+.VideoCard:hover .VideoInfo .playIconBtn{
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    left: 0px;
+    padding: 5px !important;
+    z-index: 999999;
+    max-width: 5px;
+    max-height: 5px;
+    position: relative;
+    /* display:inline; */
+    top: -7px;
+}
+.VideoCard:hover .VideoInfo .playSpeaker{
+    background: #fff;
+    border: none;
+    border-radius: 50%;
+    right: 0px;
+    padding: 5px !important;
+    z-index: 999999;
+    max-width: 5px;
+    max-height: 5px;
+    position: relative;
+    top: -7px;
+}
+
+.VideoCard:hover .VideoInfo .playIconBtn .ExtraOptions{
+    width:  7px;
+    color: #000;
+    position: relative;
+    top: -3px;
+}
+
+

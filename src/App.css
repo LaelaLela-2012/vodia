@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body button {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  background-color: #000;
+  overflow: hidden;
+}
+.container {
+  padding: 50px 70px;
+  color: #ddd;
+}
+.title{
+  margin: 50px 0;
+}
+.articleContent {
+  margin-bottom: 50px;
+}

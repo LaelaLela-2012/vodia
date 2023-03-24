@@ -1,0 +1,387 @@
+.social-container {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  .sosShare {
+    margin: 10px 0;
+  }
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  .FacebookShareButton {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    right: auto;
+    top: unset;
+    right: unset;
+  }
+  .styleFb {
+    left: 10%;
+  }
+  .styleTw {
+    left: 32%;
+  }
+  .styleTele {
+    left: 55%;
+  }
+  .styleWa {
+    left: 80%;
+  }
+  .socialMediaPopper {
+    top: 300px  !important;
+    left: unset !important;
+    right: 0px !important;
+    display: grid;
+  }
+  .socialMediaButton:hover {
+      height: 50px !important;
+      width: 50px !important;
+    }
+  a.facebook {
+    color: #4968ad;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+  a.facebook img {
+    width: 40px;
+  }
+  a.facebook:hover {
+    background-color: #ddd;
+    color: #4968ad;
+  }
+  a.instagram  {
+    color: #ad9249;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+  a.instagram img {
+    width: 40px;
+  }
+  a.instagram:hover {
+    background-color: #ddd;
+    color: #ad9249;
+  }
+  a.twitter  {
+    color: #4968ad;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+  a.twitter img {
+    width: 40px;
+  }
+  a.twitter:hover {
+    color: #4968ad;
+    background-color: #ddd;
+  }
+  a.whatsapp {
+    color: #49ad60;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+  a.whatsapp img {
+    width: 40px;
+  }
+  a.whatsapp:hover {
+    color: #49ad60;
+    background-color: #ddd;
+  }
+  a.linkedin {
+    color: #4968ad;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+  a.linkedin img {
+    width: 40px;
+  }
+  a.linkedin:hover {
+    background-color: #ddd;
+    color: #4968ad;
+  }
+  a.telegram {
+    color: #4968ad;
+    padding: 15px;
+    text-align: center;
+    line-height: 1.8rem;
+  }
+  a.telegram img {
+    width: 40px;
+  }
+  a.telegram:hover {
+    background-color: #ddd;
+    color: #4968ad;
+  }
+  
+  /* Modal Test */
+  
+  .show {
+  display: block;
+  }
+  
+  .hide {
+  display: none;
+  }
+  
+  .mbedLink {
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
+  .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #0000003a;
+  transition: opacity 0.2s ease;
+  }
+  
+  .modal {
+    display: block;
+    width: 465px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: transform 0.2s ease;
+    box-shadow: 0 2px 8px 3px;
+    font-family: Helvetica, Arial, sans-serif;
+    z-index: 100;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .modal button {
+      top: 1rem;
+      width: 2rem;
+      height: 2rem;
+      right: 0;
+      display: flex;
+      position: absolute;
+      border-radius: 20px;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 7px 0;
+      padding: 16px;
+      border: 0;
+      color: #444242;
+      cursor: pointer;
+      background: transparent;
+  }
+  .modal h4 {
+  margin-bottom: 0;
+  }
+  button .copy {
+    padding: 10px 20px;
+    position: inherit;
+    border: 1px solid #ddd;
+    width: 100px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    display: flex;
+    line-height: 0.5rem;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  @media only screen and (max-width: 920px) {
+    .social-container {
+      font-size: 12px;
+      padding: 20px 0 10px;
+    }
+    a.facebook {
+      padding: 0;
+    }
+    a.instagram{
+      padding: 0;
+    }
+    a.twitter{
+      padding: 0;
+    }
+    a.whatsapp {
+      padding: 0;
+    }
+    a.telegram {
+      padding: 0
+    }
+    a.facebook img {
+      width: 30px;
+    }
+    a.instagram img {
+      width: 30px;
+    }
+    a.twitter img {
+      width: 30px;
+    }
+    a.whatsapp img {
+      width: 30px;
+    }
+    a.linkedin img {
+      width: 30px;
+    }
+    a.telegram img {
+      width: 30px;
+    }
+    .embedLink {
+      height: 85px;
+      font-size: 11px;
+      
+    }
+  }
+  
+  @media only screen and (max-width: 750px) {
+    .modal {
+      padding: 10px 20px;
+    }
+    .social-container {
+      font-size: 12px;
+      padding: 20px 0 10px;
+    }
+    a.facebook {
+      padding: 0;
+    }
+    a.instagram{
+      padding: 0;
+    }
+    a.twitter{
+      padding: 0;
+    }
+    a.whatsapp {
+      padding: 0;
+    }
+    a.telegram {
+      padding: 0
+    }
+    a.facebook img {
+      width: 30px;
+    }
+    a.instagram img {
+      width: 30px;
+    }
+    a.twitter img {
+      width: 30px;
+    }
+    a.whatsapp img {
+      width: 30px;
+    }
+    a.linkedin img {
+      width: 30px;
+    }
+    a.telegram img {
+      width: 30px;
+    }
+    .embedLink {
+      height: 85px;
+      font-size: 11px;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .social-container {
+      font-size: 12px;
+      padding: 20px 0 10px;
+    }
+    a.facebook {
+      padding: 0;
+    }
+    a.instagram{
+      padding: 0;
+    }
+    a.twitter{
+      padding: 0;
+    }
+    a.whatsapp {
+      padding: 0;
+    }
+    a.telegram {
+      padding: 0
+    }
+    a.facebook img {
+      width: 30px;
+    }
+    a.instagram img {
+      width: 30px;
+    }
+    a.twitter img {
+      width: 30px;
+    }
+    a.whatsapp img {
+      width: 30px;
+    }
+    a.linkedin img {
+      width: 30px;
+    }
+    a.telegram img {
+      width: 30px;
+    }
+    .embedLink {
+      height: 85px;
+      font-size: 11px;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 450px){
+    .social-container {
+      transform: translate(12%, 0%);
+    }
+    .modal {
+      width: 340px;
+    }
+    a.facebook {
+      padding: 0;
+    }
+    a.instagram{
+      padding: 0;
+    }
+    a.twitter{
+      padding: 0;
+    }
+    a.whatsapp {
+      padding: 0;
+    }
+    a.telegram {
+      padding: 0;
+    }
+    .embedLink {
+      height: 117px;
+      width: 300px;
+      font-size: 11px;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .social-container {
+      transform: translate(10%, 0%);
+    }
+    .embedLink {
+      height: 112px;
+      font-size: 11px;
+    }
+  }
+  
+  @media only screen and (max-width: 321px){
+  .modal {
+      width: 295px;
+  }
+  }
+  

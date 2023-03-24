@@ -1,0 +1,21 @@
+.VideoComponent {
+    height: 700px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    position: absolute;
+    margin-bottom: 50px;
+}
+.TextsAndButtons {
+    height: 700px;
+    position: relative;
+    top: 4rem;
+}
+
+@media(min-width: 1650px) {
+    .VideoComponent {
+        height: 800px;
+    }
+}

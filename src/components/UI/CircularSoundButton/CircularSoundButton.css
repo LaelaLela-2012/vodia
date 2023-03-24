@@ -1,0 +1,31 @@
+.RoundButton {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+}
+
+.RoundBtn {
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    outline: none;
+    position: absolute;
+    right: 17px;
+    padding: 4px;
+    top: -2rem;
+}
+
+@media(min-width: 1650px) {
+    .RoundButton {
+       font-size: 32px;
+    }
+}

@@ -1,0 +1,95 @@
+.Login {
+  width: 100%;
+}
+
+.LoginCard {
+  background-color: rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 75px);
+  color: #fff;
+  padding: 40px 38px 40px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.LoginCard img {
+  height: auto;
+  cursor: pointer;
+  margin: 0 auto 30px;
+  width: 100%;
+}
+
+.LoginCard h1, .LoginCard h4 {
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.LoginCard form > * {
+  margin-top: 25px;
+}
+
+.LoginCard form {
+  padding: 25px 0;
+}
+
+.LoginCard form span {
+    color: red;
+    font-size: 13px;
+}
+
+.LoginCard button {
+  margin-top: 25px;
+}
+
+.textField {
+  box-sizing: border-box;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.textField input {
+  color: white;
+}
+
+.HorizontalDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.recaptcha{
+  margin: 0 auto 12px;
+}
+
+a, a:visited {
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 600px) {
+    .LoginCard {
+      width: 450px;
+      padding: 60px 68px 40px;
+      margin: auto;
+    }
+}
+
+@media(min-width: 1650px) {
+    .LoginCard {
+        width: 550px;
+        height: 880px;
+        padding: 60px 68px 40px;
+        margin: auto;
+    }
+
+    .LoginCard form span {
+        font-size: 20px;
+    }
+}
